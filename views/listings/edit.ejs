@@ -1,0 +1,48 @@
+<% layout("layouts/boilerPlate") -%>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form method="post" action="/listings/<%=listing._id%>?_method=PUT">
+                    <h3>Edit Avatar</h3>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Id</label>
+                        <input class="form-control" type="number" min="1" name="listing[id]" value="<%=listing.id%>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">First Name</label>
+                        <input class="form-control" type="text" name="listing[first_name]"
+                            value="<%=listing.first_name%>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <input class="form-control" type="text" name="listing[last_name]"
+                            value="<%=listing.last_name%>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input class="form-control" type="email" name="listing[email]" value="<%=listing.email%>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <input class="form-control" type="text" name="listing[gender]" value="<%=listing.gender%>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="avatar" class="form-label">Avatar</label>
+                        <input class="form-control" type="url" name="listing[avatar]" value="<%=listing.avatar%>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="domain" class="form-label">Domain</label>
+                        <input class="form-control" type="text" name="listing[domain]" value="<%=listing.domain%>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="available" class="form-label">Available</label>
+                        <input class="form-control" type="text" name="listing[available]"
+                            value="<%=listing.available%>">
+                    </div>
+                    <button class="btn btn-dark mb-4">edit</button>
+
+                </form>
+            </div>
+        </div>
+    </body>

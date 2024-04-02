@@ -1,0 +1,44 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+}
+.card {
+  width: 15rem !important;
+  height: 15rem !important;
+  margin-bottom: 1rem !important;
+  margin-left: 2rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.card-body {
+  font-size: 0.8rem !important;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+.monster {
+  height: 4rem;
+  width: 6rem;
+  margin-left: 3rem;
+}
+
+.btns {
+  display: flex !important;
+}
+a {
+  text-decoration: none;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+

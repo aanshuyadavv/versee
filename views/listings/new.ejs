@@ -1,0 +1,46 @@
+<% layout("layouts/boilerPlate") -%>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <form method="post" action="/listings">
+                    <h2>Create New Avatar</h2>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Your Id</label>
+                        <input class="form-control" type="number" min="1" name="listing[id]" placeholder="id">
+                    </div>
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">First Name</label>
+                        <input class="form-control" type="text" name="listing[first_name]" placeholder="First Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <input class="form-control" type="text" name="listing[last_name]" placeholder="Last Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input class="form-control" type="email" name="listing[email]" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <input class="form-control" type="text" name="listing[gender]" placeholder="Gender">
+                    </div>
+                    <div class="mb-3">
+                        <label for="avatar" class="form-label">Avatar</label>
+                        <input class="form-control" type="url" name="listing[avatar]" placeholder="Avatar URL/Link">
+                    </div>
+                    <div class="mb-3">
+                        <label for="domain" class="form-label">Domain</label>
+                        <input class="form-control" type="text" name="listing[domain]" placeholder="Domain">
+                    </div>
+                    <div class="mb-3">
+                        <label for="available" class="form-label">Available</label>
+                        <input class="form-control" type="text" name="listing[available]" placeholder="available">
+                    </div>
+                    <button class="btn btn-dark mb-4">Add</button>
+                </form>
+
+            </div>
+
+        </div>
+    </body>
